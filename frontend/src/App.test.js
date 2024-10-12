@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, screen, fireEvent, act } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
 import { Canvas } from '@react-three/fiber';
 import FluxImageRenderer from './components/FluxImageRenderer';
 
@@ -62,12 +61,8 @@ describe('FluxImageRenderer', () => {
   });
 
   test('renders loading state initially', () => {
-    render(
-      <Canvas>
-        <FluxImageRenderer />
-      </Canvas>
-    );
-    expect(screen.getByText('Loading...')).toBeInTheDocument();
+    render(<FluxImageRenderer />);
+    expect(screen.getByTestId('loading')).toBeInTheDocument();
   });
 
   test('renders flux image when loaded', async () => {
@@ -76,16 +71,12 @@ describe('FluxImageRenderer', () => {
       data: [{ url: 'mock-url' }],
     });
 
-    render(
-      <Canvas>
-        <FluxImageRenderer />
-      </Canvas>
-    );
+    render(<FluxImageRenderer />);
 
     // Wait for the image to load
-    const meshElement = await screen.findByTestId('flux-image-mesh');
-    expect(meshElement).toBeInTheDocument();
-    expect(screen.queryByText('Loading...')).not.toBeInTheDocument();
+    const fluxImageContainer = await screen.findByTestId('flux-image-container');
+    expect(fluxImageContainer).toBeInTheDocument();
+    expect(screen.queryByTestId('loading')).not.toBeInTheDocument();
   });
 
   test('handles errors gracefully', async () => {
@@ -93,14 +84,11 @@ describe('FluxImageRenderer', () => {
     const axios = require('axios');
     axios.get.mockRejectedValue(new Error('API Error'));
 
-    render(
-      <Canvas>
-        <FluxImageRenderer />
-      </Canvas>
-    );
+    render(<FluxImageRenderer />);
 
-    const errorMessage = await screen.findByText(/Error: API Error/i);
+    const errorMessage = await screen.findByTestId('error');
     expect(errorMessage).toBeInTheDocument();
+    expect(errorMessage).toHaveTextContent('Error: API Error');
     expect(console.error).toHaveBeenCalled();
   });
 
@@ -110,16 +98,12 @@ describe('FluxImageRenderer', () => {
       data: [{ url: 'mock-url' }],
     });
 
-    render(
-      <Canvas>
-        <FluxImageRenderer />
-      </Canvas>
-    );
+    render(<FluxImageRenderer />);
 
-    const meshElement = await screen.findByTestId('flux-image-mesh');
-    fireEvent.pointerMove(meshElement, { clientX: 100, clientY: 100 });
+    const fluxImageContainer = await screen.findByTestId('flux-image-container');
+    fireEvent.pointerMove(fluxImageContainer, { clientX: 100, clientY: 100 });
     // Since we cannot directly access shader uniforms, we check if no errors are thrown
-    expect(meshElement).toBeInTheDocument();
+    expect(fluxImageContainer).toBeInTheDocument();
   });
 
   test('generates AI animation', async () => {
@@ -129,13 +113,9 @@ describe('FluxImageRenderer', () => {
       data: [{ url: 'mock-url' }],
     });
 
-    render(
-      <Canvas>
-        <FluxImageRenderer />
-      </Canvas>
-    );
+    render(<FluxImageRenderer />);
 
-    await screen.findByTestId('flux-image-mesh');
+    await screen.findByTestId('flux-image-container');
     act(() => {
       jest.advanceTimersByTime(10000); // Advance time to trigger GAN generation
     });
@@ -166,12 +146,9 @@ describe('FluxImageRenderer', () => {
       data: [{ url: 'mock-url' }],
     });
 
-    render(
-      <Canvas>
-        <FluxImageRenderer />
-      </Canvas>
-    );
+    render(<FluxImageRenderer />);
 
+    await screen.findByTestId('flux-image-container');
     expect(global.AudioContext).toHaveBeenCalled();
     expect(global.navigator.mediaDevices.getUserMedia).toHaveBeenCalled();
   });

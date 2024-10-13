@@ -1,0 +1,27 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      name: Warm up
+    - duration: 120
+      arrivalRate: 10
+      rampTo: 50
+      name: Ramp up load
+    - duration: 600
+      arrivalRate: 50
+      name: Sustained load
+
+scenarios:
+  - name: "Load test GFC App"
+    flow:
+      - get:
+          url: "/"
+      - think: 5
+      - get:
+          url: "/api/image"
+      - think: 3
+      - post:
+          url: "/api/process"
+          json:
+            data: "Sample data for processing"

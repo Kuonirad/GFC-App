@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders FluxImageRenderer component correctly 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="flux-image-container"
+  >
+    Loading...
+  </div>
+</DocumentFragment>
+`;

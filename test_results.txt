@@ -1,0 +1,1129 @@
+
+> gfc-app@0.1.0 test
+> react-scripts test --verbose
+
+  console.log
+    Initializing component...
+
+      at initializeComponent (src/components/FluxImageRenderer.js:121:13)
+
+  console.log
+    Fetching image...
+
+      at fetchImage (src/components/FluxImageRenderer.js:15:13)
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:133:13
+
+  console.log
+    Fetch response: { ok: true, json: [Function: json] }
+
+      at src/components/FluxImageRenderer.js:18:15
+
+  console.log
+    Fetched data: { image: 'mocked-image-url' }
+
+      at src/components/FluxImageRenderer.js:23:15
+
+  console.log
+    Generating AI animation...
+
+      at generateAIAnimation (src/components/FluxImageRenderer.js:44:13)
+
+  console.error
+    Error in generateAIAnimation: TypeError: Cannot read properties of undefined (reading 'add')
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:48:13
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:123:5
+
+      86 |       output.dispose();
+      87 |     } catch (err) {
+    > 88 |       console.error('Error in generateAIAnimation:', err);
+         |               ^
+      89 |       setState(prevState => ({
+      90 |         ...prevState,
+      91 |         error: `Failed to generate AI animation: ${err.message}`,
+
+      at src/components/FluxImageRenderer.js:88:15
+      at src/components/FluxImageRenderer.js:123:5
+
+  console.log
+    Setting up audio...
+
+      at setupAudio (src/components/FluxImageRenderer.js:97:13)
+
+  console.log
+    Audio setup skipped: not in browser environment or in test mode
+
+      at setupAudio (src/components/FluxImageRenderer.js:99:15)
+
+  console.log
+    Component initialization complete
+
+      at src/components/FluxImageRenderer.js:125:13
+
+PASS src/App.test.js
+  ✓ renders FluxImageRenderer component (115 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.357 s
+Ran all test suites related to changed files.
+
+  console.log
+    Initializing component...
+
+      at src/components/FluxImageRenderer.js:132:3
+
+  console.log
+    Fetching image...
+
+      at console (src/components/FluxImageRenderer.js:15:13)
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:137:62
+
+  console.log
+    Fetch response: { ok: true, json: [Function: json] }
+
+      at src/components/FluxImageRenderer.js:18:15
+
+  console.log
+    Fetched data: { image: 'mocked-image-url' }
+
+      at src/components/FluxImageRenderer.js:23:15
+
+  console.log
+    Generating AI animation...
+
+      at state (src/components/FluxImageRenderer.js:44:13)
+
+  console.error
+    Error in generateAIAnimation: TypeError: Cannot read properties of undefined (reading 'add')
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:48:13
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:133:5
+
+       96 |       output.dispose();
+       97 |     } catch (err) {
+    >  98 |       console.error('Error in generateAIAnimation:', err);
+          |         ^
+       99 |       setState(prevState => ({
+      100 |         ...prevState,
+      101 |         error: `Failed to generate AI animation: ${err.message}`,
+
+      at src/components/FluxImageRenderer.js:98:9
+      at src/components/FluxImageRenderer.js:134:4
+
+  console.log
+    Setting up audio...
+
+      at src/components/FluxImageRenderer.js:106:7
+
+  console.log
+    Audio setup skipped: not in browser environment or in test mode
+
+      at src/components/FluxImageRenderer.js:108:9
+
+  console.log
+    Component initialization complete
+
+      at src/components/FluxImageRenderer.js:137:5
+
+PASS src/App.test.js
+  ✓ renders FluxImageRenderer component (193 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        3.338 s
+Ran all test suites related to changed files.
+
+  console.log
+    Initializing component...
+
+      at src/components/FluxImageRenderer.js:123:11
+
+  console.log
+    Fetching image...
+
+      at setupAudio (src/components/FluxImageRenderer.js:15:13)
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:136:13
+
+  console.log
+    Fetch response: { ok: true, json: [Function: json] }
+
+      at src/components/FluxImageRenderer.js:18:15
+
+  console.log
+    Fetched data: { image: 'mocked-image-url' }
+
+      at src/components/FluxImageRenderer.js:23:15
+
+  console.log
+    Generating AI animation...
+
+      at console (src/components/FluxImageRenderer.js:44:13)
+
+  console.error
+    Error in generateAIAnimation: TypeError: Cannot read properties of undefined (reading 'add')
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:48:13
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:126:5
+
+      88 |       ys.dispose();
+      89 |       output.dispose();
+    > 90 |     } catch (err) {
+         |            ^
+      91 |       console.error('Error in generateAIAnimation:', err);
+      92 |       setState(prevState => ({
+      93 |         ...prevState,
+
+      at src/components/FluxImageRenderer.js:90:12
+      at src/components/FluxImageRenderer.js:125:5
+
+  console.log
+    Setting up audio...
+
+      at src/components/FluxImageRenderer.js:99:7
+
+  console.log
+    Audio setup skipped: not in browser environment or in test mode
+
+      at src/components/FluxImageRenderer.js:101:5
+
+  console.log
+    Component initialization complete
+
+      at src/components/FluxImageRenderer.js:128:3
+
+PASS src/App.test.js
+  ✓ renders FluxImageRenderer component (89 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        5.015 s
+Ran all test suites related to changed files.
+
+  console.log
+    Initializing component...
+
+      at src/components/FluxImageRenderer.js:126:7
+
+  console.log
+    Fetching image...
+
+      at useEffect (src/components/FluxImageRenderer.js:15:13)
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:137:51
+
+  console.log
+    Fetch response: { ok: true, json: [Function: json] }
+
+      at src/components/FluxImageRenderer.js:18:15
+
+  console.log
+    Fetched data: { image: 'mocked-image-url' }
+
+      at src/components/FluxImageRenderer.js:23:15
+
+  console.log
+    Generating AI animation...
+
+      at initializeComponent (src/components/FluxImageRenderer.js:44:13)
+
+  console.error
+    Error in generateAIAnimation: TypeError: Cannot read properties of undefined (reading 'add')
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:48:13
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:129:5
+
+      91 |       ys.dispose();
+      92 |       output.dispose();
+    > 93 |     } catch (err) {
+         |     ^
+      94 |       console.error('Error in generateAIAnimation:', err);
+      95 |       setState(prevState => ({
+      96 |         ...prevState,
+
+      at src/components/FluxImageRenderer.js:93:5
+      at src/components/FluxImageRenderer.js:129:5
+
+  console.log
+    Setting up audio...
+
+      at src/components/FluxImageRenderer.js:102:9
+
+  console.log
+    Audio setup skipped: not in browser environment or in test mode
+
+      at src/components/FluxImageRenderer.js:104:13
+
+  console.log
+    Component initialization complete
+
+      at src/components/FluxImageRenderer.js:132:3
+
+PASS src/App.test.js
+  ✓ renders FluxImageRenderer component (366 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        4.64 s, estimated 5 s
+Ran all test suites related to changed files.
+
+  console.log
+    Initializing component...
+
+      at src/components/FluxImageRenderer.js:137:62
+
+  console.log
+    Fetching image...
+
+      at lineNumber (src/components/FluxImageRenderer.js:15:13)
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:141:71
+
+  console.log
+    Fetch response: { ok: true, json: [Function: json] }
+
+      at src/components/FluxImageRenderer.js:18:15
+
+  console.log
+    Fetched data: { image: 'mocked-image-url' }
+
+      at src/components/FluxImageRenderer.js:23:15
+
+  console.log
+    Generating AI animation...
+
+      at columnNumber (src/components/FluxImageRenderer.js:44:13)
+
+  console.log
+    TensorFlow object: [Object: null prototype] {
+      ready: [Function: mockConstructor] {
+        _isMockFunction: true,
+        getMockImplementation: [Function (anonymous)],
+        mock: [Getter/Setter],
+        mockClear: [Function (anonymous)],
+        mockReset: [Function (anonymous)],
+        mockRestore: [Function (anonymous)],
+        mockReturnValueOnce: [Function (anonymous)],
+        mockResolvedValueOnce: [Function (anonymous)],
+        mockRejectedValueOnce: [Function (anonymous)],
+        mockReturnValue: [Function (anonymous)],
+        mockResolvedValue: [Function (anonymous)],
+        mockRejectedValue: [Function (anonymous)],
+        mockImplementationOnce: [Function (anonymous)],
+        mockImplementation: [Function (anonymous)],
+        mockReturnThis: [Function (anonymous)],
+        mockName: [Function (anonymous)],
+        getMockName: [Function (anonymous)]
+      },
+      sequential: [Function: mockConstructor] {
+        _isMockFunction: true,
+        getMockImplementation: [Function (anonymous)],
+        mock: [Getter/Setter],
+        mockClear: [Function (anonymous)],
+        mockReset: [Function (anonymous)],
+        mockRestore: [Function (anonymous)],
+        mockReturnValueOnce: [Function (anonymous)],
+        mockResolvedValueOnce: [Function (anonymous)],
+        mockRejectedValueOnce: [Function (anonymous)],
+        mockReturnValue: [Function (anonymous)],
+        mockResolvedValue: [Function (anonymous)],
+        mockRejectedValue: [Function (anonymous)],
+        mockImplementationOnce: [Function (anonymous)],
+        mockImplementation: [Function (anonymous)],
+        mockReturnThis: [Function (anonymous)],
+        mockName: [Function (anonymous)],
+        getMockName: [Function (anonymous)]
+      },
+      layers: {
+        dense: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResolvedValue: [Function (anonymous)],
+          mockRejectedValue: [Function (anonymous)],
+          mockImplementationOnce: [Function (anonymous)],
+          mockImplementation: [Function (anonymous)],
+          mockReturnThis: [Function (anonymous)],
+          mockName: [Function (anonymous)],
+          getMockName: [Function (anonymous)]
+        }
+      },
+      default: {
+        ready: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResol  console.log
+    Initializing component...
+
+      at src/components/FluxImageRenderer.js:133:62
+
+  console.log
+    Fetching image...
+
+      at src/components/FluxImageRenderer.js:15:13
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:137:71
+
+  console.log
+    Fetch response: { ok: true, json: [Function: json] }
+
+      at src/components/FluxImageRenderer.js:18:15
+
+  console.log
+    Fetched data: { image: 'mocked-image-url' }
+
+      at src/components/FluxImageRenderer.js:23:15
+
+  console.log
+    Generating AI animation...
+
+      at src/components/FluxImageRenderer.js:44:13
+
+  console.log
+    TensorFlow object: [Object: null prototype] {
+      ready: [Function: mockConstructor] {
+        _isMockFunction: true,
+        getMockImplementation: [Function (anonymous)],
+        mock: [Getter/Setter],
+        mockClear: [Function (anonymous)],
+        mockReset: [Function (anonymous)],
+        mockRestore: [Function (anonymous)],
+        mockReturnValueOnce: [Function (anonymous)],
+        mockResolvedValueOnce: [Function (anonymous)],
+        mockRejectedValueOnce: [Function (anonymous)],
+        mockReturnValue: [Function (anonymous)],
+        mockResolvedValue: [Function (anonymous)],
+        mockRejectedValue: [Function (anonymous)],
+        mockImplementationOnce: [Function (anonymous)],
+        mockImplementation: [Function (anonymous)],
+        mockReturnThis: [Function (anonymous)],
+        mockName: [Function (anonymous)],
+        getMockName: [Function (anonymous)]
+      },
+      sequential: [Function: mockConstructor] {
+        _isMockFunction: true,
+        getMockImplementation: [Function (anonymous)],
+        mock: [Getter/Setter],
+        mockClear: [Function (anonymous)],
+        mockReset: [Function (anonymous)],
+        mockRestore: [Function (anonymous)],
+        mockReturnValueOnce: [Function (anonymous)],
+        mockResolvedValueOnce: [Function (anonymous)],
+        mockRejectedValueOnce: [Function (anonymous)],
+        mockReturnValue: [Function (anonymous)],
+        mockResolvedValue: [Function (anonymous)],
+        mockRejectedValue: [Function (anonymous)],
+        mockImplementationOnce: [Function (anonymous)],
+        mockImplementation: [Function (anonymous)],
+        mockReturnThis: [Function (anonymous)],
+        mockName: [Function (anonymous)],
+        getMockName: [Function (anonymous)]
+      },
+      layers: {
+        dense: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResolvedValue: [Function (anonymous)],
+          mockRejectedValue: [Function (anonymous)],
+          mockImplementationO  console.log
+    Initializing component...
+
+      at src/components/FluxImageRenderer.js:137:62
+
+  console.log
+    Fetching image...
+
+      at lineNumber (src/components/FluxImageRenderer.js:15:13)
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:141:71
+
+  console.log
+    Fetch response: { ok: true, json: [Function: json] }
+
+      at src/components/FluxImageRenderer.js:18:15
+
+  console.log
+    Fetched data: { image: 'mocked-image-url' }
+
+      at src/components/FluxImageRenderer.js:23:15
+
+  console.log
+    Generating AI animation...
+
+      at columnNumber (src/components/FluxImageRenderer.js:44:13)
+
+  console.log
+    TensorFlow object: [Object: null prototype] {
+      ready: [Function: mockConstructor] {
+        _isMockFunction: true,
+        getMockImplementation: [Function (anonymous)],
+        mock: [Getter/Setter],
+        mockClear: [Function (anonymous)],
+        mockReset: [Function (anonymous)],
+        mockRestore: [Function (anonymous)],
+        mockReturnValueOnce: [Function (anonymous)],
+        mockResolvedValueOnce: [Function (anonymous)],
+        mockRejectedValueOnce: [Function (anonymous)],
+        mockReturnValue: [Function (anonymous)],
+        mockResolvedValue: [Function (anonymous)],
+        mockRejectedValue: [Function (anonymous)],
+        mockImplementationOnce: [Function (anonymous)],
+        mockImplementation: [Function (anonymous)],
+        mockReturnThis: [Function (anonymous)],
+        mockName: [Function (anonymous)],
+        getMockName: [Function (anonymous)]
+      },
+      sequential: [Function: mockConstructor] {
+        _isMockFunction: true,
+        getMockImplementation: [Function (anonymous)],
+        mock: [Getter/Setter],
+        mockClear: [Function (anonymous)],
+        mockReset: [Function (anonymous)],
+        mockRestore: [Function (anonymous)],
+        mockReturnValueOnce: [Function (anonymous)],
+        mockResolvedValueOnce: [Function (anonymous)],
+        mockRejectedValueOnce: [Function (anonymous)],
+        mockReturnValue: [Function (anonymous)],
+        mockResolvedValue: [Function (anonymous)],
+        mockRejectedValue: [Function (anonymous)],
+        mockImplementationOnce: [Function (anonymous)],
+        mockImplementation: [Function (anonymous)],
+        mockReturnThis: [Function (anonymous)],
+        mockName: [Function (anonymous)],
+        getMockName: [Function (anonymous)]
+      },
+      layers: {
+        dense: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResolvedValue: [Function (anonymous)],
+          mockRejectedValue: [Function (anonymous)],
+          mockImplementationOnce: [Function (anonymous)],
+          mockImplementation: [Function (anonymous)],
+          mockReturnThis: [Function (anonymous)],
+          mockName: [Function (anonymous)],
+          getMockName: [Function (anonymous)]
+        }
+      },
+      default: {
+        ready: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResolvedValue: [Function (anonymous)],
+          mockRejectedValue: [Function (anonymous)],
+          mockImplementationOnce: [Function (anonymous)],
+          mockImplementation: [Function (anonymous)],
+          mockReturnThis: [Function (anonymous)],
+          mockName: [Function (anonymous)],
+          getMockName: [Function (anonymous)]
+        },
+        sequential: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResolvedValue: [Function (anonymous)],
+          mockRejectedValue: [Function (anonymous)],
+          mockImplementationOnce: [Function (anonymous)],
+          mockImplementation: [Function (anonymous)],
+          mockReturnThis: [Function (anonymous)],
+          mockName: [Function (anonymous)],
+          getMockName: [Function (anonymous)]
+        },
+        layers: { dense: [Function] }
+      }
+    }
+
+      at columnNumber (src/components/FluxImageRenderer.js:45:9)
+
+  console.log
+    TensorFlow version: undefined
+
+      at columnNumber (src/components/FluxImageRenderer.js:46:13)
+
+  console.log
+    Before tf.ready()
+
+      at columnNumber (src/components/FluxImageRenderer.js:48:13)
+
+  console.log
+    After tf.ready()
+
+      at src/components/FluxImageRenderer.js:48:45
+
+  console.log
+    Creating sequential model
+
+      at src/components/FluxImageRenderer.js:48:64
+
+  console.log
+    Model created: undefined
+
+      at src/components/FluxImageRenderer.js:49:29
+
+  console.log
+    Adding dense layer
+
+      at src/components/FluxImageRenderer.js:49:49
+
+  console.error
+    Error in generateAIAnimation: TypeError: Cannot read properties of undefined (reading 'add')
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:57:13
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:144:5
+
+      104 |
+      105 |       xs.dispose();
+    > 106 |       ys.dispose();
+          |               ^
+      107 |       output.dispose();
+      108 |     } catch (err) {
+      109 |       console.error('Error in generateAIAnimation:', err);
+
+      at src/components/FluxImageRenderer.js:106:15
+      at src/components/FluxImageRenderer.js:147:5
+
+  console.log
+    Setting up audio...
+
+      at src/components/FluxImageRenderer.js:114:12
+
+  console.log
+    Audio setup skipped: not in browser environment or in test mode
+
+      at src/components/FluxImageRenderer.js:116:10
+
+  console.log
+    Component initialization complete
+
+      at src/components/FluxImageRenderer.js:138:3
+
+PASS src/App.test.js (5.793 s)
+  ✓ renders FluxImageRenderer component (347 ms)
+
+  console.log
+    Initializing component...
+
+      at src/components/FluxImageRenderer.js:137:62
+
+  console.log
+    Fetching image...
+
+      at lineNumber (src/components/FluxImageRenderer.js:15:13)
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:141:71
+
+PASS src/components/__tests__/FluxImageRenderer.test.js
+  ✓ renders FluxImageRenderer component correctly (275 ms)
+
+ › 1 snapshot written.
+Snapshot Summary
+ › 1 snapshot written from 1 test suite.
+
+Test Suites: 2 passed, 2 total
+Tests:       2 passed, 2 total
+Snapshots:   1 written, 1 total
+Time:        7.789 s
+Ran all test suites related to changed files.
+
+  console.log
+    Initializing component...
+
+      at src/components/FluxImageRenderer.js:137:62
+
+  console.log
+    Fetching image...
+
+      at lineNumber (src/components/FluxImageRenderer.js:15:13)
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:146:56
+
+  console.log
+    Fetch response: { ok: true, json: [Function: json] }
+
+      at src/components/FluxImageRenderer.js:18:15
+
+  console.log
+    Fetched data: { image: 'mocked-image-url' }
+
+      at src/components/FluxImageRenderer.js:23:15
+
+  console.log
+    Generating AI animation...
+
+      at columnNumber (src/components/FluxImageRenderer.js:44:13)
+
+  console.log
+    TensorFlow object: [Object: null prototype] {
+      ready: [Function: mockConstructor] {
+        _isMockFunction: true,
+        getMockImplementation: [Function (anonymous)],
+        mock: [Getter/Setter],
+        mockClear: [Function (anonymous)],
+        mockReset: [Function (anonymous)],
+        mockRestore: [Function (anonymous)],
+        mockReturnValueOnce: [Function (anonymous)],
+        mockResolvedValueOnce: [Function (anonymous)],
+        mockRejectedValueOnce: [Function (anonymous)],
+        mockReturnValue: [Function (anonymous)],
+        mockResolvedValue: [Function (anonymous)],
+        mockRejectedValue: [Function (anonymous)],
+        mockImplementationOnce: [Function (anonymous)],
+        mockImplementation: [Function (anonymous)],
+        mockReturnThis: [Function (anonymous)],
+        mockName: [Function (anonymous)],
+        getMockName: [Function (anonymous)]
+      },
+      sequential: [Function: mockConstructor] {
+        _isMockFunction: true,
+        getMockImplementation: [Function (anonymous)],
+        mock: [Getter/Setter],
+        mockClear: [Function (anonymous)],
+        mockReset: [Function (anonymous)],
+        mockRestore: [Function (anonymous)],
+        mockReturnValueOnce: [Function (anonymous)],
+        mockResolvedValueOnce: [Function (anonymous)],
+        mockRejectedValueOnce: [Function (anonymous)],
+        mockReturnValue: [Function (anonymous)],
+        mockResolvedValue: [Function (anonymous)],
+        mockRejectedValue: [Function (anonymous)],
+        mockImplementationOnce: [Function (anonymous)],
+        mockImplementation: [Function (anonymous)],
+        mockReturnThis: [Function (anonymous)],
+        mockName: [Function (anonymous)],
+        getMockName: [Function (anonymous)]
+      },
+      layers: {
+        dense: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResolvedValue: [Function (anonymous)],
+          mockRejectedValue: [Function (anonymous)],
+          mockImplementationOnce: [Function (anonymous)],
+          mockImplementation: [Function (anonymous)],
+          mockReturnThis: [Function (anonymous)],
+          mockName: [Function (anonymous)],
+          getMockName: [Function (anonymous)]
+        }
+      },
+      default: {
+        ready: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResolvedValue: [Function (anonymous)],
+          mockRejectedValue: [Function (anonymous)],
+          mockImplementationOnce: [Function (anonymous)],
+          mockImplementation: [Function (anonymous)],
+          mockReturnThis: [Function (anonymous)],
+          mockName: [Function (anonymous)],
+          getMockName: [Function (anonymous)]
+        },
+        sequential: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResolvedValue: [Function (anonymous)],
+          mockRejectedValue: [Function (anonymous)],
+          mockImplementationOnce: [Function (anonymous)],
+          mockImplementation: [Function (anonymous)],
+          mockReturnThis: [Function (anonymous)],
+          mockName: [Function (anonymous)],
+          getMockName: [Function (anonymous)]
+        },
+        layers: { dense: [Function] }
+      }
+    }
+
+      at columnNumber (src/components/FluxImageRenderer.js:45:9)
+
+  console.log
+    TensorFlow version: undefined
+
+      at columnNumber (src/components/FluxImageRenderer.js:46:13)
+
+  console.log
+    Before tf.ready()
+
+      at columnNumber (src/components/FluxImageRenderer.js:48:13)
+
+  console.log
+    After tf.ready()
+
+      at src/components/FluxImageRenderer.js:48:45
+
+  console.log
+    Creating sequential model
+
+      at src/components/FluxImageRenderer.js:48:64
+
+  console.log
+    Model created: undefined
+
+      at src/components/FluxImageRenderer.js:49:29
+
+  console.log
+    Adding dense layer
+
+      at src/components/FluxImageRenderer.js:49:49
+
+  console.error
+    Error in generateAIAnimation: TypeError: Cannot read properties of undefined (reading 'add')
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:57:13
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:144:5
+        at initialize (/home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:153:9)
+
+      104 |
+      105 |       xs.dispose();
+    > 106 |       ys.dispose();
+          |               ^
+      107 |       output.dispose();
+      108 |     } catch (err) {
+      109 |       console.error('Error in generateAIAnimation:', err);
+
+      at src/components/FluxImageRenderer.js:106:15
+      at fileName (src/components/FluxImageRenderer.js:147:5)
+      at initialize (src/components/FluxImageRenderer.js:141:71)
+
+  console.log
+    Setting up audio...
+
+      at src/components/FluxImageRenderer.js:114:12
+
+  console.log
+    Audio setup skipped: not in browser environment or in test mode
+
+      at src/components/FluxImageRenderer.js:116:10
+
+  console.log
+    Component initialization complete
+
+      at src/components/FluxImageRenderer.js:138:3
+
+PASS src/App.test.js (7.13 s)
+  ✓ renders FluxImageRenderer component (735 ms)
+
+  console.log
+    Initializing component...
+
+      at src/components/FluxImageRenderer.js:137:62
+
+  console.log
+    Fetching image...
+
+      at lineNumber (src/components/FluxImageRenderer.js:15:13)
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:146:56
+
+PASS src/components/__tests__/FluxImageRenderer.test.js
+  ✓ renders FluxImageRenderer component correctly (65 ms)
+
+Test Suites: 2 passed, 2 total
+Tests:       2 passed, 2 total
+Snapshots:   1 passed, 1 total
+Time:        9.012 s
+Ran all test suites related to changed files.
+
+: [Function (anonymous)],
+          mockReturnThis: [Function (anonymous)],
+          mockName: [Function (anonymous)],
+          getMockName: [Function (anonymous)]
+        },
+        sequential: [Function: mockConstructor] {
+          _isMockFunction: true,
+          getMockImplementation: [Function (anonymous)],
+          mock: [Getter/Setter],
+          mockClear: [Function (anonymous)],
+          mockReset: [Function (anonymous)],
+          mockRestore: [Function (anonymous)],
+          mockReturnValueOnce: [Function (anonymous)],
+          mockResolvedValueOnce: [Function (anonymous)],
+          mockRejectedValueOnce: [Function (anonymous)],
+          mockReturnValue: [Function (anonymous)],
+          mockResolvedValue: [Function (anonymous)],
+          mockRejectedValue: [Function (anonymous)],
+          mockImplementationOnce: [Function (anonymous)],
+          mockImplementation: [Function (anonymous)],
+          mockReturnThis: [Function (anonymous)],
+          mockName: [Function (anonymous)],
+          getMockName: [Function (anonymous)]
+        },
+        layers: { dense: [Function] }
+      }
+    }
+
+      at src/components/FluxImageRenderer.js:45:9
+
+  console.log
+    TensorFlow version: undefined
+
+      at src/components/FluxImageRenderer.js:46:13
+
+  console.log
+    Before tf.ready()
+
+      at src/components/FluxImageRenderer.js:48:13
+
+  console.log
+    After tf.ready()
+
+      at src/components/FluxImageRenderer.js:48:45
+
+  console.log
+    Creating sequential model
+
+      at src/components/FluxImageRenderer.js:48:64
+
+  console.log
+    Model created: undefined
+
+      at src/components/FluxImageRenderer.js:49:29
+
+  console.log
+    Adding dense layer
+
+      at src/components/FluxImageRenderer.js:49:49
+
+  console.error
+    Error in generateAIAnimation: TypeError: Cannot read properties of undefined (reading 'add')
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:57:13
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at /home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:144:5
+        at initialize (/home/ubuntu/GFC_App/src/components/FluxImageRenderer.js:153:9)
+
+      102 |         aiOutput: result[0],
+      103 |       }));
+    > 104 |
+          | ^
+      105 |       xs.dispose();
+      106 |       ys.dispose();
+      107 |       output.dispose();
+
+      at src/components/FluxImageRenderer.js:104:9
+      at columnNumber (src/components/FluxImageRenderer.js:134:3)
+      at initialize (src/components/FluxImageRenderer.js:137:71)
+
+  console.log
+    Setting up audio...
+
+      at src/components/FluxImageRenderer.js:112:10
+
+  console.log
+    Audio setup skipped: not in browser environment or in test mode
+
+      at src/components/FluxImageRenderer.js:114:9
+
+  console.log
+    Component initialization complete
+
+      at src/components/FluxImageRenderer.js:137:5
+
+PASS src/App.test.js (6.581 s)
+  ✓ renders FluxImageRenderer component (454 ms)
+
+  console.log
+    Initializing component...
+
+      at columnNumber (src/components/FluxImageRenderer.js:133:62)
+
+  console.log
+    Fetching image...
+
+      at src/components/FluxImageRenderer.js:15:13
+
+  console.log
+    Current state: {
+      loading: true,
+      error: null,
+      image: null,
+      aiOutput: null,
+      audioContext: null,
+      analyser: null
+    }
+
+      at src/components/FluxImageRenderer.js:143:26
+
+PASS src/components/__tests__/FluxImageRenderer.test.js
+  ✓ renders FluxImageRenderer component correctly (124 ms)
+
+Test Suites: 2 passed, 2 total
+Tests:       2 passed, 2 total
+Snapshots:   1 passed, 1 total
+Time:        8.355 s
+Ran all test suites related to changed files.
+

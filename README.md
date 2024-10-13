@@ -1,7 +1,30 @@
-# Generative Flux Creator (GFC) App
+# Generative Flux Creator (GFC) App ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Node.js](https://img.shields.io/badge/node-v14.0.0-blue.svg) ![npm version](https://img.shields.io/npm/v/gfc-app.svg)
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Running the Application](#running-the-application)
+- [Testing](#testing)
+- [Error Handling](#error-handling)
+- [Logging](#logging)
+- [Database](#database)
+- [Technologies](#technologies)
+- [Development Status](#development-status)
+- [Next Steps](#next-steps)
+- [Docker Support](#docker-support)
+- [Performance Testing](#performance-testing)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Overview
 The GFC App is a robust web application that turns flux images from Black Forest Labs into animated images using generative AI. It demonstrates advanced error handling, efficient database management using SQLite, and comprehensive testing practices.
+
+![TensorFlow.js Logo](https://www.tensorflow.org/images/tfjs_logo.png)
 
 ## Features
 - Flux Image Processing: Utilizes flux images from Black Forest Labs.
@@ -126,6 +149,41 @@ The GFC App is currently in its final stages of development. All core features h
 - Conduct final user acceptance testing
 - Prepare marketing materials
 - Plan for public release and marketplace deployment
+
+## Docker Support
+To run the application using Docker:
+
+1. Build the Docker image:
+   ```
+   docker build -t gfc-app .
+   ```
+
+2. Run the Docker container:
+   ```
+   docker run -p 3000:3000 gfc-app
+   ```
+
+3. Access the application at `http://localhost:3000` in your web browser.
+
+For more detailed instructions on using Docker with this application, please refer to the `docker-compose.yml` file in the root directory.
+
+## Performance Testing
+To run performance tests:
+
+1. Navigate to the `scripts` directory:
+   ```
+   cd scripts
+   ```
+
+2. Run the performance test script:
+   ```
+   node performanceTest.js
+   ```
+
+This will execute a series of performance benchmarks and output the results to the console. For more detailed performance analysis, refer to the `performanceTest.js` file in the `scripts` directory.
+
+## API Documentation
+Detailed API documentation is available in the `docs/API.md` file. This includes comprehensive information about each endpoint, request/response formats, and usage examples.
 
 ## Contributing
 1. Fork the repository
